@@ -2,11 +2,32 @@
 
 Welcome,
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is the Code Institute student template for the mongo lessons. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **March 3rd, 2023**
+You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 3rd, 2023**
 
 ## Codeanywhere Reminders
+
+# IDE
+
+- **Connect to Mongo CLI on a IDE**
+- navigate to your MongoDB Clusters Sandbox
+- click **"Connect"** button
+- select **"Connect with the MongoDB shell"**
+- select **"I have the mongo shell installed"**
+- choose option 4.4 for : **"Select your mongo shell version"**
+- choose option: **"Run your connection string in your command line"**
+- `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --username <USERNAME>`
+  - replace all `<angle-bracket>` keys with your own data
+- enter password *(will not echo **\*\*\*\*** *on screen)\*
+
+#### Clear screen in Mongo Shell:
+
+- `cls`
+
+#### Show all database collections:
+
+- `show collections`
 
 To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 

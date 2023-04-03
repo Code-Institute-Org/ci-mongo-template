@@ -4,15 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - "/tmp/postgres/socket:/var/run/postgresql"
  
-  psql:
-    image: postgres:11.9
+  mongo:
+    image: mongo:latest
     environment:
-      - POSTGRES_PASSWORD=pass1234
-      - POSTGRES_USER=codeany
-      - POSTGRES_DB=mydb
+      MONGO_INITDB_ROOT_USERNAME: codeany
+      MONGO_INITDB_ROOT_PASSWORD: pass1234
     network_mode: service:app
-    volumes:
-      - "/tmp/postgres/socket:/var/run/postgresql"
