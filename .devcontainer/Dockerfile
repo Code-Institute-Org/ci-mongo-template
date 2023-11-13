@@ -1,9 +1,7 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
-ENV PYTHON_VERSION 3.9.17
-ENV NODE_MAJOR 16
+ENV PYTHON_VERSION 3.8.11
 ENV DEBIAN_FRONTEND=noninteractive
-    
 #Install pyenv and mongo shell dependencies
 RUN apt-get update && apt-get install -y gnupg2
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 20691eec35216c63caf66ce1656408e390cfb1f5 \
