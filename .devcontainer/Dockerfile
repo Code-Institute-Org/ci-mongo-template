@@ -11,7 +11,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 20691eec35216c6
 
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 
-ARG USERNAME=codeany
+ARG USERNAME=cistudent
 RUN useradd -ms /bin/bash $USERNAME
 USER $USERNAME
 WORKDIR /home/$USERNAME
