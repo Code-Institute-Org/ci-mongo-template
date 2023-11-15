@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ENV PYTHON_VERSION 3.8.11
+ENV PYTHON_VERSION 3.8.18
 ENV DEBIAN_FRONTEND=noninteractive
 #Install pyenv and mongo shell dependencies
 RUN apt-get update && apt-get install -y gnupg2
