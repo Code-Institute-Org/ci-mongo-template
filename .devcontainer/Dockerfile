@@ -32,7 +32,7 @@ RUN set -ex \
 
 RUN echo 'alias python=python3' >> ~/.bashrc && \
     echo 'export PIP_USER=yes' >> ~/.bashrc && \
-    echo 'alias pip=pip3' >> ~/.bashrc \
+    echo 'alias pip=pip3' >> ~/.bashrc && \
     echo 'alias mongosh=mongo' >> ~/.bashrc  
 
 COPY ./build-assets/heroku_config.sh /home/$USERNAME/.theia/heroku_config.sh
