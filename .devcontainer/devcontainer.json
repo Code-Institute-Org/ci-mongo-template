@@ -32,6 +32,7 @@
           "**/core.python*": true
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false,
         "python.linting.pycodestyleEnabled": true,
         "python.terminal.activateEnvironment": false,
         "workbench.iconTheme": "none"
@@ -39,5 +40,5 @@
     }
   },
 
-  "remoteUser": "codeany"
+  "remoteUser": "cistudent"
 }

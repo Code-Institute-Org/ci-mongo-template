@@ -1,13 +1,11 @@
 version: '3'
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: public.ecr.aws/m5f1e7g7/ci-project-templates-mongo:version1.0
  
   mongo:
     image: mongo:latest
     environment:
-      MONGO_INITDB_ROOT_USERNAME: codeany
+      MONGO_INITDB_ROOT_USERNAME: cistudent
       MONGO_INITDB_ROOT_PASSWORD: pass1234
     network_mode: service:app

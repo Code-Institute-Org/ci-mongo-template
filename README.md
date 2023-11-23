@@ -1,14 +1,14 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
 
-This is the Code Institute student template for the mongo lessons. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is the Code Institute student template for using Mongo. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 3rd, 2023**
+You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about this template and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **November 13th, 2023**
 
-## Codeanywhere Reminders
+## IDE Reminders
 
-# IDE
+### Connecting your database
 
 - **Connect to Mongo CLI on a IDE**
 - navigate to your MongoDB Clusters Sandbox
@@ -19,7 +19,9 @@ You can safely delete this README.md file, or change it for your own project. Pl
 - choose option: **"Run your connection string in your command line"**
 - `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --username <USERNAME>`
   - replace all `<angle-bracket>` keys with your own data
-- enter password *(will not echo **\*\*\*\*** *on screen)\*
+- enter password _(will not echo **\*\*\*\*** on screen)_
+
+### Other commands
 
 #### Clear screen in Mongo Shell:
 
@@ -29,24 +31,20 @@ You can safely delete this README.md file, or change it for your own project. Pl
 
 - `show collections`
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+#### Run your project
 
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As we need to run a backend Python file, we should use the command `python3 app.py`, if your Python file is named `app.py` of course.
 
 A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+In most cloudbased IDEs you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### To log into the Heroku toolbelt CLI:
 
 1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
 2. Scroll down to the _API Key_ and click _Reveal_
 3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
+4. In your IDE, from the terminal, run `heroku_config`
 5. Paste in your API key when asked
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
