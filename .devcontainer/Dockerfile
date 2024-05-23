@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ENV PYTHON_VERSION 3.8.11
+ENV PYTHON_VERSION 3.9.18
 ENV DEBIAN_FRONTEND=noninteractive
 #Install pyenv and mongo shell dependencies
 RUN apt-get update && apt-get install -y gnupg2
@@ -11,7 +11,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 20691eec35216c6
 
 RUN curl https://cli-assets.heroku.com/install.sh | sh
 
-ARG USERNAME=codeany
+ARG USERNAME=cistudent
 RUN useradd -ms /bin/bash $USERNAME
 USER $USERNAME
 WORKDIR /home/$USERNAME
@@ -32,7 +32,7 @@ RUN set -ex \
 
 RUN echo 'alias python=python3' >> ~/.bashrc && \
     echo 'export PIP_USER=yes' >> ~/.bashrc && \
-    echo 'alias pip=pip3' >> ~/.bashrc \
+    echo 'alias pip=pip3' >> ~/.bashrc && \
     echo 'alias mongosh=mongo' >> ~/.bashrc  
 
 COPY ./build-assets/heroku_config.sh /home/$USERNAME/.theia/heroku_config.sh
