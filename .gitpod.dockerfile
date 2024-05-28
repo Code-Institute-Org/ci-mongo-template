@@ -50,7 +50,7 @@ RUN echo 'alias run="python3 $GITPOD_REPO_ROOT/manage.py runserver 0.0.0.0:8000"
     echo 'alias pip=pip3' >> ~/.bashrc && \
     echo 'alias arctictern="python3 $GITPOD_REPO_ROOT/.vscode/arctictern.py"' >> ~/.bashrc && \
     echo 'alias font_fix="python3 $GITPOD_REPO_ROOT/.vscode/font_fix.py"' >> ~/.bashrc && \
-    echo 'alias mongosh=mongo' >> ~/.bashrc && \
+    echo 'alias mongo=mongosh' >> ~/.bashrc && \
     echo 'alias make_url="python3 $GITPOD_REPO_ROOT/.vscode/make_url.py "' >> ~/.bashrc
 
 # Local environment variables
