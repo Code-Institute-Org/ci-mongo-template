@@ -15,9 +15,9 @@ You can safely delete this README.md file, or change it for your own project. Pl
 - click **"Connect"** button
 - select **"Connect with the MongoDB shell"**
 - select **"I have the mongo shell installed"**
-- choose option 4.4 for : **"Select your mongo shell version"**
+- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
 - choose option: **"Run your connection string in your command line"**
-- `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --username <USERNAME>`
+- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
   - replace all `<angle-bracket>` keys with your own data
 - enter password _(will not echo **\*\*\*\*** on screen)_
 
